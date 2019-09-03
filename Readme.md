@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
-* Студент: [ALEXEY ZDOROVENKO](https://up.htmlacademy.ru/htmlcss/26/user/553401).
-* Наставник: `Неизвестно`.
+* Студент: [Алексей Здоровенко](https://up.htmlacademy.ru/htmlcss/26/user/553401).
+* Наставник: [Илья Туров](https://htmlacademy.ru/profile/turov).
 
 ---
 
