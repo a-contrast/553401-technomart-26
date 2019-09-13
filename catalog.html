@@ -13,7 +13,8 @@
         <img src="img\logo-technomart.svg" width="109" height="19" alt="Техномарт">
       </a>
       <form>
-        <input type="search" placeholder="Поиск">                                         <!--НЕ ПРИВЯЗАН <label>-->
+        <label for="search" class="visually-hidden">Поиск</label>
+        <input id="search" type="search" placeholder="Поиск">
       </form>
       <ul>
         <li><a href="#">Закладки: 0</a></li>
@@ -63,12 +64,14 @@
     <aside>
       <h2 class="visually-hidden">Фильтр товаров</h2>
       <p>Фильтр:</p>
-      <form action="https://echo.htmlacademy.ru" method="post" oninput="pricehigh.value=price.value">
+      <form action="https://echo.htmlacademy.ru" method="post">                         <!--oninput="price.value=pricehigh.value"-->
         <div>
           <h4>Цена</h4>
-          <input id="price" type="range" min="0" max="40000" step="10" value="30000">                 <!--НЕ ПРИВЯЗАН <label>-->
-          <output name="pricelow">0</output> -
-          <output name="pricehigh">30000</output>
+          <input id="price" type="range" min="0" max="40000" step="10" value="30000">
+          <label for="pricelow" class="visually-hidden">Минимальная цена</label>
+          <input id="pricelow" type="text" name="pricelow" value="0"> -
+          <label for="pricehigh" class="visually-hidden">Максимальная цена</label>
+          <input id="pricehigh" type="text" name="pricehigh" value="30000">
         </div>
         <div>
           <h4>Производители:</h4>
