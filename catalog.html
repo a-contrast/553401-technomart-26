@@ -13,7 +13,7 @@
         <img src="img\logo-technomart.svg" width="109" height="19" alt="Техномарт">
       </a>
       <form>
-        <input type="search" placeholder="Поиск">
+        <input type="search" placeholder="Поиск">                                         <!--НЕ ПРИВЯЗАН <label>-->
       </form>
       <ul>
         <li><a href="#">Закладки: 0</a></li>
@@ -66,7 +66,7 @@
       <form action="https://echo.htmlacademy.ru" method="post" oninput="pricehigh.value=price.value">
         <div>
           <h4>Цена</h4>
-          <input id="price" type="range" min="0" max="40000" step="10" value="30000">
+          <input id="price" type="range" min="0" max="40000" step="10" value="30000">                 <!--НЕ ПРИВЯЗАН <label>-->
           <output name="pricelow">0</output> -
           <output name="pricehigh">30000</output>
         </div>
@@ -118,8 +118,8 @@
             <li><a href="">По функционалу</a></li>
           </ul>
           <ul>
-            <li><a href="">Вниз</a></li>
-            <li><a href="">Вверх</a></li>
+            <li><a href=""><span class="visually-hidden">Вниз</span></a></li>
+            <li><a href=""><span class="visually-hidden">Вверх</span></a></li>
           </ul>
         </div>
         <ul>
@@ -278,9 +278,9 @@
     <div>
       <p>2010-2017 Компания "Техномарт" <span>Все права защищены</span></p>
       <ul>
-        <li><a href="#">Вконтакте</a></li>
-        <li><a href="#">Фейсбук</a></li>
-        <li><a href="#">Инстаграм</a></li>
+        <li><a href="#"><span class="visually-hidden">Вконтакте</span></a></li>
+        <li><a href="#"><span class="visually-hidden">Фейсбук</span></a></li>
+        <li><a href="#"><span class="visually-hidden">Инстаграм</span></a></li>
       </ul>
       <p>
         Обратная связь:
