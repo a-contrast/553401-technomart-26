@@ -65,16 +65,16 @@
       <h2 class="visually-hidden">Фильтр товаров</h2>
       <p>Фильтр:</p>
       <form action="https://echo.htmlacademy.ru" method="post">                         <!--oninput="price.value=pricehigh.value"-->
-        <div>
-          <h4>Цена</h4>
+        <fieldset>
+          <legend>Цена</legend>
           <input id="price" type="range" min="0" max="40000" step="10" value="30000">
           <label for="pricelow" class="visually-hidden">Минимальная цена</label>
           <input id="pricelow" type="text" name="pricelow" value="0"> -
           <label for="pricehigh" class="visually-hidden">Максимальная цена</label>
           <input id="pricehigh" type="text" name="pricehigh" value="30000">
-        </div>
-        <div>
-          <h4>Производители:</h4>
+        </fieldset>
+        <fieldset>
+          <legend>Производители:</legend>
           <div>
             <input id="bosch" type="checkbox" name="bosch" checked>
             <label for="bosch">BOSCH</label>
@@ -95,9 +95,9 @@
             <input id="hitachi" type="checkbox" name="hitachi">
             <label for="bosch">HITACHI</label>
           </div>
-        </div>
-        <div>
-          <h4>Питание</h4>
+        </fieldset>
+        <fieldset>
+          <legend>Питание</legend>
           <div>
             <input id="accum" type="radio" name="supply" value="accum" checked>
             <label for="accum">Аккумуляторные</label>
@@ -106,7 +106,7 @@
             <input id="network" type="radio" name="supply" value="network">
             <label for="network">Сетевые</label>
           </div>
-        </div>
+        </fieldset>
         <button type="submit">Показать</button>
       </form>
     </aside>
