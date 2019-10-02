@@ -1,5 +1,7 @@
 /*Назначить значения при наведении для блоков фильтра, стилизовать фильтр,
-нарисовать треугольники вверх и вниз, надпись new, стилизовать кнопки в галерее*/
+нарисовать треугольники вверх и вниз, надпись new, стилизовать кнопки в галерее
+Скорее всего есть косяк в том, что в хедере фон дан не ссылкам, а строке списка, 
+такая же фигня и с карточками производителей*/
 html {
   box-sizing: border-box;
 }
@@ -412,13 +414,20 @@ h1 {
 .card-item {
   display: inline-block;            /*ПОЗДНЕЕ УБРАТЬ*/
   list-style: none;
-  width: 218px;
-  height: 316px;
+  width: 220px;
+  height: 318px;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
   font-weight: 700;
   text-align: center;
   border: 1px solid #eaeaea;
+}
+
+.card-item:hover {
+  width: 220px;
+  height: 318px;
+  border: none;
+  box-shadow: 0 10px 25px 0 rgba(41, 52, 73, 0.5);
 }
 
 .card-item h4 {
@@ -547,7 +556,7 @@ h1 {
   width: 220px;
   height: 145px;
   border: none;
-  box-shadow: 0 10px 25px 0 rgba(47, 42, 43, 0.5);
+  box-shadow: 0 10px 25px 0 rgba(41, 52, 73, 0.5);
 }
 
 .brand-item:active {
