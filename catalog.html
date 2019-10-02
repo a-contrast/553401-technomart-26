@@ -15,7 +15,7 @@
   <header class="header">
     <div class="header-top">
       <div class="container">
-        <a class="logo" href="index.html">
+        <a class="logo-main logo" href="index.html">
           <img src="img\logo-technomart.svg" width="109" height="19" alt="Техномарт">
         </a>
         <form action="https://echo.htmlacademy.ru" method="post">
@@ -23,9 +23,9 @@
           <input id="search" type="search" placeholder="Поиск">
         </form>
         <ul>
-          <li><a href="#">Закладки: 0</a></li>
-          <li class="basket"><a href="#">Корзина: 0</a></li>
-          <li><a href="#">Оформить заказ</a></li>
+          <li class="top-links"><a href="#">Закладки: 0</a></li>
+          <li class="top-links"><a href="#">Корзина: 0</a></li>
+          <li class="top-links checkout"><a href="#">Оформить заказ</a></li>
         </ul>
       </div>
     </div>
@@ -41,9 +41,9 @@
         <!--ТУТ НАДО ПОРАБОТАТЬ-->
         <p class="registration">
           <a href="account.html">Равшан Джамшутович</a>
-          <a href="#">Выход</a>
+          <a class="exit" href="#">Выход</a>
         </p>
-        <ul>
+        <ul class="account-items">
           <li><a href="#">Мои заказы</a></li>
           <li><a href="account.html">Личный кабинет</a></li>
         </ul>
@@ -51,27 +51,28 @@
     </div>
     <nav class="navigation container">
       <ul>
-        <li><a href="index.html">Главная</a></li>
-        <li><a href="#">Компания</a></li>
-        <li><a>Каталог</a></li>
-        <li><a href="#">Новости</a></li>
-        <li><a href="#">Спецпредложения</a></li>
-        <li><a href="#">Доставка</a></li>
-        <li><a href="#">Контакты</a></li>
+        <li class="nav-item"><a href="index.html">Главная</a></li>
+        <li class="nav-item"><a href="#">Компания</a></li>
+        <li class="nav-item paged"><a>Каталог</a></li>
+        <li class="nav-item"><a href="#">Новости</a></li>
+        <li class="nav-item"><a href="#">Спецпредложения</a></li>
+        <li class="nav-item"><a href="#">Доставка</a></li>
+        <li class="nav-item"><a href="#">Контакты</a></li>
       </ul>
     </nav>
   </header>
   <main>
-    <div class="container head-name">
+    <div class="container">
+    <div class="head-name">
       <h1>Перфораторы</h1>
     </div>
     <ul class="breadcrumbs">
       <li><a href="index.html">Главная</a></li>
       <li><a href="#">Каталлог</a></li>
       <li><a href="#">Инструмент</a></li>
-      <li>Перфораторы</li>
+      <li class="breadcrumbs-active">Перфораторы</li>
     </ul>
-    <aside>
+    <aside class="aside">
       <h2 class="visually-hidden">Фильтр товаров</h2>
       <p>Фильтр:</p>
       <form action="https://echo.htmlacademy.ru" method="post">
@@ -144,8 +145,8 @@
           <p class="del">22500 Р.</p>
           <p class="price">15500 Р.</p>
           <p class="buy">
-            <a href="">Купить</a>
-            <a href="">В закладки</a>
+            <a class="buy-btn" href="">Купить</a>
+            <a class="bookmark-btn" href="">В закладки</a>
           </p>
         </li>
         <li class="card-item">
@@ -156,8 +157,8 @@
           <p class="del">30500 Р.</p>
           <p class="price">25500 Р.</p>
           <p class="buy">
-            <a href="">Купить</a>
-            <a href="">В закладки</a>
+            <a class="buy-btn" href="">Купить</a>
+            <a class="bookmark-btn" href="">В закладки</a>
           </p>
         </li>
         <li class="card-item">
@@ -169,8 +170,8 @@
           <p class="del"></p>
           <p class="price">15500 Р.</p>
           <p class="buy">
-            <a href="">Купить</a>
-            <a href="">В закладки</a>
+            <a class="buy-btn" href="">Купить</a>
+            <a class="bookmark-btn" href="">В закладки</a>
           </p>
         </li>
         <li class="card-item">
@@ -181,8 +182,8 @@
           <p class="del">22500 Р.</p>
           <p class="price">15500 Р.</p>
           <p class="buy">
-            <a href="">Купить</a>
-            <a href="">В закладки</a>
+            <a class="buy-btn" href="">Купить</a>
+            <a class="bookmark-btn" href="">В закладки</a>
           </p>
         </li>
         <li class="card-item">
@@ -194,8 +195,8 @@
           <p class="del">30500 Р.</p>
           <p class="price">25500 Р.</p>
           <p class="buy">
-            <a href="">Купить</a>
-            <a href="">В закладки</a>
+            <a class="buy-btn" href="">Купить</a>
+            <a class="bookmark-btn" href="">В закладки</a>
           </p>
         </li>
         <li class="card-item">
@@ -206,8 +207,8 @@
           <p class="del"></p>
           <p class="price">15500 Р.</p>
           <p class="buy">
-            <a href="">Купить</a>
-            <a href="">В закладки</a>
+            <a class="buy-btn" href="">Купить</a>
+            <a class="bookmark-btn" href="">В закладки</a>
           </p>
         </li>
         <li class="card-item">
@@ -218,8 +219,8 @@
           <p class="del">22500 Р.</p>
           <p class="price">15500 Р.</p>
           <p class="buy">
-            <a href="">Купить</a>
-            <a href="">В закладки</a>
+            <a class="buy-btn" href="">Купить</a>
+            <a class="bookmark-btn" href="">В закладки</a>
           </p>
         </li>
         <li class="card-item">
@@ -230,8 +231,8 @@
           <p class="del">30500 Р.</p>
           <p class="price">25500 Р.</p>
           <p class="buy">
-            <a href="">Купить</a>
-            <a href="">В закладки</a>
+            <a class="buy-btn" href="">Купить</a>
+            <a class="bookmark-btn" href="">В закладки</a>
           </p>
         </li>
         <li class="card-item">
@@ -242,22 +243,23 @@
           <p class="del"></p>
           <p class="price">15500 Р.</p>
           <p class="buy">
-            <a href="">Купить</a>
-            <a href="">В закладки</a>
+            <a class="buy-btn" href="">Купить</a>
+            <a class="bookmark-btn" href="">В закладки</a>
           </p>
         </li>
       </ul>
       <ul class="pagination">
-        <li><a>1</a></li>
+        <li class="pagination-active">1</li>
         <li><a href="">2</a></li>
         <li><a href="">3</a></li>
-        <li><a href="">Следующая</a></li>
+        <li class="next"><a href="">Следующая</a></li>
       </ul>
     </section>
+    </div>
     <section class="items-info">
       <div class="container">
       <h2>Пара слов о перфораторах</h2>
-      <p>
+      <p class="text-info">
         Перфоратор - универсальный строительный инструмент. Предназначен для сверления и долбления
         отверстий в кирпиче, бетоне и камне. Существуют электромеханические и пневматические перфораторы.
         Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном
@@ -269,7 +271,7 @@
   <footer class="footer">
     <div class="container">
       <div class="footer-top">
-        <a class="logo">
+        <a class="logo-main logo" href="index.html">
           <img src="img\logo-technomart.svg" width="109" height="19" alt="Техномарт">
         </a>
         <ul class="footer-top-nav">
@@ -301,21 +303,21 @@
           <li><a class="facebook" href="#"><span class="visually-hidden">Фейсбук</span></a></li>
           <li><a class="instagram" href="#"><span class="visually-hidden">Инстаграм</span></a></li>
         </ul>
-        <p>
+        <p  class="mailto">
           Обратная связь:
           <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
         </p>
-        <p>Разработано -
+        <p class="htmlacademy">Разработано -
           <a href="#">htmlacademy.ru</a>
         </p>
       </div>
     </div>
   </footer>
-  <section>
+  <section class="popup-buy">
     <p>Товар добавлен в корзину!</p>
     <div>
-      <a href="">Оформить заказ</a>
-      <button type="button">Продолжить покупки</button>
+      <a class="btn-red" href="">Оформить заказ</a>
+      <button class="btn-continue" type="button">Продолжить покупки</button>
     </div>
     <button type="button">Закрыть</button>
   </section>
