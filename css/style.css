@@ -183,21 +183,23 @@ a {
 
 .navigation {
   background-color: #32425c;
-  box-shadow: 0 5px 0 0 #293449;
   line-height: 17px;
 }
 
 .nav-item {
+  margin: 0;
+  padding: 0;
   display: inline;            /*ПОЗДНЕЕ УБРАТЬ*/
 }
 
 .nav-item a {
+  margin: 0;
   display: inline-block;            /*ПОЗДНЕЕ УБРАТЬ*/
   padding: 15px;
   padding-right: 28px;
   padding-left: 28px;
   text-align: center;
-
+  box-shadow: 0 5px 0 0 #293449;
 }
 
 .nav-item:not(.paged) a:hover {
@@ -221,14 +223,32 @@ h1 {
 }
 
 .breadcrumbs {
+  list-style: none;
+}
+
+.breadcrumbs a,
+.breadcrumbs-active {
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 18px;
   font-weight: 400;
+  color: #000000;
+  text-transform: uppercase;
 }
 
-.breadcrumbs {
-  list-style: none;
+.breadcrumbs-main {
+  display: block;
+  width: 14px;
+  height: 12px;
+  background: url("../img/icon-home.svg") no-repeat;
+  background-position: center;
+}
+
+.breadcrumbs-main span {
+  display: block;
+  width: 0;
+  height: 0;
+  overflow: hidden;
 }
 
 .menu ul {
@@ -332,14 +352,6 @@ h1 {
   background-position: 50%;
 } */
 
-.breadcrumbs a,
-.breadcrumbs-active {
-  font-family: "PT Sans", "Arial", sans-serif;
-  font-size: 13px;
-  line-height: 18px;
-  color: #000000;
-}
-
 .aside {
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 17px;
@@ -418,9 +430,6 @@ h1 {
   list-style: none;
   width: 220px;
   height: 318px;
-  font-family: "PT Sans", "Arial", sans-serif;
-  font-size: 18px;
-  font-weight: 700;
   text-align: center;
   border: 1px solid #eaeaea;
 }
@@ -434,9 +443,16 @@ h1 {
 
 .card-item h4 {
   margin: 0;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
   line-height: 20px;
-  font-weight: 800;
+  font-weight: 700;
+}
+
+.item-name, 
+.item-name:hover,
+.item-name:active {
+  color: #000000;
 }
 
 .card-item img {
@@ -448,16 +464,24 @@ h1 {
 }
 
 .del {
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 17px;
   line-height: 18px;
+  font-weight: 700;
   text-decoration: line-through;
+  color: #a9a9a9;
 }
 
 .price {
+  font-family: "PT Sans", "Arial", sans-serif;
   padding: 10px;
   background: url("../img/red-button.svg") no-repeat;
   background-position: center;
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: 700;
   text-align: center;
+  color: #ffffff;
 }
 
 .buy {
@@ -655,6 +679,7 @@ h1 {
   color: #ffffff;
   background-color: #ee3643;
   font-size: 14px;
+  line-height: 18px;
   text-transform: uppercase;
   text-align: center;
   border: none;
@@ -675,6 +700,7 @@ h1 {
   width: 195px;
   background-color: #ffffff;
   font-size: 14px;
+  line-height: 18px;
   text-transform: uppercase;
   text-align: center;
   border: none;
