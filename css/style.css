@@ -85,43 +85,43 @@ a {
 }
 
 .top-links {
-  display: inline-block;            /*ПОЗДНЕЕ УБРАТЬ*/
+  display: inline-block;                  /*ПОЗДНЕЕ УБРАТЬ*/
+  margin: 0;
+}
+
+.top-links a {
+  display: block;                  /*ПОЗДНЕЕ УБРАТЬ*/
+  margin: 0;
   width: 150px;
   padding: 10px;
   text-align: center;
 }
 
-.top-links:hover {
+.top-links a:hover {
   background-color: #212a3a;
 }
 
-.top-links:active {
+.top-links a:active {
   background-color: #161d29;
-}
-
-.top-links:active a {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.checkout {
+.checkout a {
   background-color: #63a63e;
 }
 
-.checkout:hover {
+.checkout a:hover {
   background-color: #5fbb2d;
 }
 
-.checkout:active {
+.checkout a:active {
   background-color: #518534;
-}
-
-.checkout:active a {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.basket {
+/*.basket a {
   background-color: #ee3643;
-}
+}*/
 
 .description {
   color: #ee3643;
@@ -188,22 +188,24 @@ a {
 }
 
 .nav-item {
+  display: inline;            /*ПОЗДНЕЕ УБРАТЬ*/
+}
+
+.nav-item a {
   display: inline-block;            /*ПОЗДНЕЕ УБРАТЬ*/
   padding: 15px;
   padding-right: 28px;
   padding-left: 28px;
   text-align: center;
+
 }
 
-.nav-item:hover:not(.paged) {
+.nav-item:not(.paged) a:hover {
   background-color: #293449;
 }
 
-.nav-item:hover:not(.paged) {
+.nav-item:not(.paged) a:active {
   background-color: #1d2739;
-}
-
-.nav-item a:active {
   color: rgba(250, 250, 250, 0.5);
 }
 
@@ -543,23 +545,27 @@ h1 {
 }
 
 .brand-item {
-  display: inline-block;            /*ПОЗДНЕЕ УБРАТЬ*/
+  display: inline;            /*ПОЗДНЕЕ УБРАТЬ*/
   list-style: none;
-  width: 218px;
-  height: 143px;
+}
+
+.brand-item a {
+  display: inline-block;            /*ПОЗДНЕЕ УБРАТЬ*/
+  width: 220px;
+  height: 145px;
   text-align: center;
   vertical-align: top;            /*ПОЗДНЕЕ УБРАТЬ*/
   border: 1px solid #eaeaea;
 }
 
-.brand-item:hover {
+.brand-item a:hover {
   width: 220px;
   height: 145px;
   border: none;
   box-shadow: 0 10px 25px 0 rgba(41, 52, 73, 0.5);
 }
 
-.brand-item:active {
+.brand-item a:active {
   width: 220px;
   height: 145px;
   border: none;
