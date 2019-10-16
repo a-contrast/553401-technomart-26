@@ -1182,6 +1182,7 @@ width: auto;}
 }
 
 .feedback label {
+  display: block;
   font-size: 18px;
   line-height: 18px;
 }
