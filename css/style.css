@@ -723,6 +723,16 @@ h1 {
   background-color: #ffffff;
   border: 1px solid #e5e5e5;
   border-radius: 1px;
+  cursor: pointer;
+}
+
+.aside button:hover,
+.aside button:focus {
+  border-color: #bdc6ca;
+}
+
+.aside button:active {
+  border-color: #ee3643;
 }
 
 .range-controls {
@@ -974,8 +984,9 @@ h1 {
 .card-item {
   display: flex;
   flex-direction: column;
+  align-items: center;
   position: relative;
-  padding-bottom: 10px;
+  padding-bottom: 20px;
   width: 220px;
   margin-bottom: 20px;
   margin-right: 20px;
@@ -1002,6 +1013,7 @@ h1 {
 .card-item h4 {
   margin: 0;
   margin-bottom: auto;
+  padding: 0px 20px;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
   line-height: 20px;
@@ -1018,6 +1030,7 @@ h1 {
   display: block;
   margin: 0;
   order: -1;
+  margin-bottom: 5px;
 }
 
 .card-item p {
@@ -1025,10 +1038,7 @@ h1 {
 }
 
 .del {
-  position: absolute;
-  top: 230px;
-  left: 50%;
-  transform: translateX(-50%);
+  min-height: 38px;
   padding: 10px;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 17px;
@@ -1039,15 +1049,28 @@ h1 {
 }
 
 .price {
+  position: relative;
+  width: 140px;
+  padding: 10px 30px;
+  background: #ee3643;
+  border-radius: 3px;
   font-family: "PT Sans", "Arial", sans-serif;
-  padding: 10px;
-  background: url("../img/red-button.svg") no-repeat;
-  background-position: center;
   font-size: 17px;
   line-height: 18px;
   font-weight: 700;
   text-align: center;
   color: #ffffff;
+}
+
+.price:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -20px;
+  width: 0;
+  height: 0;
+  border: 19px solid white;
+  border-left-color: #ee3643;
 }
 
 .buy {
@@ -1057,9 +1080,9 @@ h1 {
   padding-top: 44px;
   height: 159px;
   width: 100%;
-  background: white;
+  background: rgba(255,255,255,0.9);;
   transform: translateY(-159px);
-  transition: transform 0.4s ease;
+  transition: transform 0.5s ease;
 }
 
 .card-item:hover .buy {
@@ -1097,6 +1120,7 @@ h1 {
   color: #32425c;
   border: 3px solid #63a63e;
   border-radius: 3px;
+  background-color: #ffffff;
 }
 
 .bookmark-btn:hover {
@@ -1104,7 +1128,8 @@ h1 {
 }
 
 .bookmark-btn:active {
-  opacity: 0.3;
+  color: rgba(50, 66, 92, 0.3);
+  border-color: rgba(50, 66, 92, 0.3);
 }
 
 .pagination {
