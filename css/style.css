@@ -903,6 +903,7 @@ h1 {
 }
 
 .sorting a {
+  display: inline-block;
   color: rgba(0, 0, 0, 0.3);
   border-bottom: 1px dotted #ee3643;
 }
@@ -941,16 +942,45 @@ h1 {
   padding-right: 20px;
 }
 
-.down-btn:hover svg,
-.up-btn:hover svg {
-  fill: #231f20;
+.sorting-up-down a {
+  width: 25px;
+  text-align: center;
 }
 
-.sorting .sorting-active,
-.sorting-active svg {
+.sorting .sorting-active {
   color: #ee3643;
   border-bottom: none;
   fill: #ee3643;
+}
+
+.triangle-up-btn {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 5.5px 10px 5.5px;
+  border-color: transparent transparent #c5c5c5   transparent;
+}
+
+.triangle-down-btn {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 10px 5.5px 0 5.5px;
+  border-color: #c5c5c5 transparent transparent transparent;
+}
+
+.up-btn:hover .triangle-up-btn {
+  border-color: transparent transparent #231f20   transparent;
+}
+
+.down-btn:hover .triangle-down-btn {
+  border-color: #231f20 transparent transparent transparent;
+}
+
+.sorting-active .triangle-up-btn {
+  border-color: transparent transparent #ee3643   transparent;
 }
 
 .popular-items {
