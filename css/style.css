@@ -74,10 +74,9 @@ a {
   align-items: center;
   z-index: 1;
   width: 220px;
-  height: 42px;
+  height: 52px;
   background-color: #ee3643;
-  box-shadow: 0px 4px 0 0 #b52933,
-    0px 5px 0 0 #b72f38;
+  box-shadow: 0px -5px 0 0 rgba(0, 0, 0, 0.24) inset;
 }
 
 .logo:hover {
@@ -530,7 +529,6 @@ a {
   flex-shrink: 0;
   padding: 21px 23px;
   width: 300px;
-  height: 123px;
   margin-right: 20px;
   margin-bottom: 20px;
   color: white;
@@ -547,8 +545,10 @@ a {
 }
 
 .menu-item h3 {
+  width: 170px;
+  padding-bottom: 13px;
   margin: 0;
-  margin-bottom: 13px;
+  margin-bottom: auto;
   font-size: 24px;
   line-height: 30px;
   font-weight: 400;
@@ -732,7 +732,7 @@ a {
   background-color: #f2f6f8;
 }
 
-h1 {
+.head-name h1 {
   margin: 0px;
   padding: 0px;
   font-size: 30px;
@@ -743,6 +743,7 @@ h1 {
 .breadcrumbs {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   margin: 0;
   padding-top: 20px;
   padding-bottom: 20px;
@@ -791,7 +792,7 @@ h1 {
 
 .main-content {
   display: flex;
-  margin-bottom: 60px;
+  margin-bottom: 50px;
 }
 
 .aside {
@@ -1026,6 +1027,10 @@ h1 {
 }
 
 .radio-input:checked:disabled+.radio-box {
+  opacity: 0.4;
+}
+
+.label-disabled {
   opacity: 0.4;
 }
 
@@ -1408,6 +1413,7 @@ h1 {
 
 .pagination {
   display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding-left: 0;
   padding-top: 32px;
@@ -1416,6 +1422,7 @@ h1 {
 
 .pagination li {
   margin-right: 10px;
+  margin-bottom: 10px;
 }
 
 .pagination a {
@@ -1883,16 +1890,17 @@ a.pagination-active {
 }
 
 .footer-top .logo-main {
-  padding: 15px 10px;
+  padding: 10px;
+  padding-bottom: 16px;
   width: 220px;
-  height: 63px;
-}
+  height: 68px;}
 
 .footer-top .footer-top-nav {
   display: flex;
   flex-wrap: wrap;
   align-items: flex-end;
   margin-left: auto;
+  margin-bottom: 5px;
 }
 
 .footer-top-nav li {
@@ -1908,11 +1916,12 @@ a.pagination-active {
 
 .footer-center {
   display: flex;
-  padding-top: 33px;
+  padding-top: 28px;
   padding-left: 4px;
 }
 
 .footer-center .footer-address {
+  flex-shrink: 0;
   width: 330px;
   font-size: 18px;
   line-height: 24px;
@@ -1953,13 +1962,15 @@ a.pagination-active {
 .footer-bottom .container {
   display: flex;
   align-items: center;
-  padding-top: 34px;
-  padding-bottom: 31px;
+  padding-top: 32px;
+  padding-bottom: 29px;
   background-color: #293449;
 }
 
-.copy {
+.footer-bottom .copy {
   width: 250px;
+  flex-shrink: 0;
+  margin-right: 40px;
 }
 
 .copy span {
@@ -1969,13 +1980,16 @@ a.pagination-active {
 
 .footer-bottom .social {
   display: flex;
-  margin-right: 72px;
-  margin-left: 140px;
+  flex-wrap: wrap;
+  margin-right: auto;
+  margin-left: auto;
   padding-top: 1px;
 }
 
 .social li {
   margin-right: 4px;
+  padding-top: 2px;
+  padding-bottom: 2px;
 }
 
 .social a {
@@ -2010,8 +2024,13 @@ a.pagination-active {
 
 .footer-bottom .mailto,
 .footer-bottom .htmlacademy {
-  margin-right: 6px;
-  margin-left: 45px;
+  flex-shrink: 0;
+  margin-right: 14px;
+  margin-left: 38px;
+}
+
+.footer-bottom .mailto {
+  margin-left: 15px;
 }
 
 .mailto a,
@@ -2222,7 +2241,11 @@ a.pagination-active {
   margin-right: 16px;
 }
 
-.filter {
+.popup-buy-container::before,
+.popup-map::before,
+.popup-feedback::before {
+  content: "";
+  display: block;
   position: fixed;
   top: 0;
   left: 0;

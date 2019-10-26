@@ -2,16 +2,13 @@ var mapLink = document.querySelector(".mini-map");
 var mapPopup = document.querySelector(".popup-map");
 var mapBig = mapPopup.querySelector("iframe");
 var mapClose = mapPopup.querySelector(".close-map");
-var mapFilterBackground = mapPopup.querySelector(".filter");
 var buyBtns = document.querySelectorAll(".buy-btn");
 var buyPopup = document.querySelector(".popup-buy-container");
 var buyClose = buyPopup.querySelector(".close");
 var buyPopupBtn = buyPopup.querySelector(".btn-red");
-var buyFilterBackground = buyPopup.querySelector(".filter");
 var feedbackLink = document.querySelector(".feedback-btn");
 var feedbackPopup = document.querySelector(".popup-feedback");
 var feedbackClose = feedbackPopup.querySelector(".close");
-var feedbackFilterBackground = feedbackPopup.querySelector(".filter");
 var feedbackForm = feedbackPopup.querySelector(".feedback-form");
 var feedbackFormContainer = feedbackPopup.querySelector(".feedback");
 var feedbackName = feedbackPopup.querySelector("[name=name]");
@@ -99,10 +96,6 @@ mapClose.addEventListener("click", function (evt) {
   mapPopup.style.display = "none";
 });
 
-mapFilterBackground.addEventListener("click", function (evt) {
-  mapPopup.style.display = "none";
-});
-
 window.addEventListener("keydown", function (evt) {
   if (evt.keyCode === 27) {
     if (mapPopup.style.display = "block") {
@@ -125,10 +118,6 @@ buyClose.addEventListener("click", function (evt) {
   buyPopup.style.display = "none";
 });
 
-buyFilterBackground.addEventListener("click", function (evt) {
-  buyPopup.style.display = "none";
-});
-
 window.addEventListener("keydown", function (evt) {
   if (evt.keyCode === 27) {
     if (buyPopup.style.display = "block") {
@@ -147,12 +136,7 @@ feedbackLink.addEventListener("click", function (evt) {
 feedbackClose.addEventListener("click", function (evt) {
   evt.preventDefault();
   feedbackPopup.style.display = "none";
-  feedbackPopup.classList.remove("feedback-error");
-});
-
-feedbackFilterBackground.addEventListener("click", function (evt) {
-  feedbackPopup.style.display = "none";
-  feedbackPopup.classList.remove("feedback-error");
+  feedbackFormContainer.classList.remove("feedback-error");
 });
 
 window.addEventListener("keydown", function (evt) {
@@ -160,7 +144,7 @@ window.addEventListener("keydown", function (evt) {
     if (feedbackPopup.style.display = "block") {
       evt.preventDefault();
       feedbackPopup.style.display = "none";
-      feedbackPopup.classList.remove("feedback-error");
+      feedbackFormContainer.classList.remove("feedback-error");
     }
   }
 });
